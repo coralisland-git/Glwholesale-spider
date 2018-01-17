@@ -80,7 +80,7 @@ class glwholesaleSpider(scrapy.Spider):
 		tmp = []
 		for item in items:
 			if self.validate(item) != '':
-				if self.validate(item) == '----------' or 'login' in self.validate(item).lower():
+				if self.validate(item) == '-----' or 'login' in self.validate(item).lower():
 					tmp.append('')
 				else:
 					tmp.append(self.validate(item))
